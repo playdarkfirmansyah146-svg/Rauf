@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina - Toko Online Lumina</title>
+    <link rel="stylesheet" href="./Dist/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <!-- Navbar (Chapter 12:33) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="ri-store-line"></i> Lumina Store
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero (Chapter 33:45) -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Toko Lumina</h1>
+            <p>Kualitas Terbaik Untuk Anda | Fast Delivery</p>
+            <a href="#produk" class="cta-btn">Lihat Produk</a>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#773dff" fill-opacity="1" d="M0,96L7.5,101.3C15,107,30,117,45,149.3C60,181,75,235,90,224C105,213,120,139,135,133.3C150,128,165,192,180,202.7C195,213,210,171,225,165.3C240,160,255,192,270,186.7C285,181,300,139,315,122.7C330,107,345,117,360,133.3C375,149,390,171,405,149.3C420,128,435,64,450,42.7C465,21,480,43,495,90.7C510,139,525,213,540,250.7C555,288,570,288,585,256C600,224,615,160,630,144C645,128,660,160,675,197.3C690,235,705,277,720,256C735,235,750,149,765,133.3C780,117,795,171,810,176C825,181,840,139,855,117.3C870,96,885,96,900,90.7C915,85,930,75,945,64C960,53,975,43,990,74.7C1005,107,1020,181,1035,224C1050,267,1065,277,1080,261.3C1095,245,1110,203,1125,197.3C1140,192,1155,224,1170,208C1185,192,1200,128,1215,96C1230,64,1245,64,1260,106.7C1275,149,1290,235,1305,245.3C1320,256,1335,192,1350,165.3C1365,139,1380,149,1395,149.3C1410,149,1425,139,1433,133.3L1440,128L1440,0L1432.5,0C1425,0,1410,0,1395,0C1380,0,1365,0,1350,0C1335,0,1320,0,1305,0C1290,0,1275,0,1260,0C1245,0,1230,0,1215,0C1200,0,1185,0,1170,0C1155,0,1140,0,1125,0C1110,0,1095,0,1080,0C1065,0,1050,0,1035,0C1020,0,1005,0,990,0C975,0,960,0,945,0C930,0,915,0,900,0C885,0,870,0,855,0C840,0,825,0,810,0C795,0,780,0,765,0C750,0,735,0,720,0C705,0,690,0,675,0C660,0,645,0,630,0C615,0,600,0,585,0C570,0,555,0,540,0C525,0,510,0,495,0C480,0,465,0,450,0C435,0,420,0,405,0C390,0,375,0,360,0C345,0,330,0,315,0C300,0,285,0,270,0C255,0,240,0,225,0C210,0,195,0,180,0C165,0,150,0,135,0C120,0,105,0,90,0C75,0,60,0,45,0C30,0,15,0,8,0L0,0Z"></path></svg>
+    <!-- Hero (Chapter 33:45) -->
+
+    <!-- Layanan Section -->
+<header>
+    <section id="layanan" class="layanan-section-padding">
+        <div class="container">
+            <h2 data-aos="fade-up">Layanan Terbaik Kami</h2>
+            <div class="layanan-grid">
+                <div class="layanan-item" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="ri-rocket-line"></i>
+                    <h3>Cepat</h3>
+                    <p>Pengiriman cepat dan tepat waktu</p>
+                </div>
+                <div class="layanan-item" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="ri-shield-check-line"></i>
+                    <h3>Aman</h3>
+                    <p>Produk dikemas rapi dan aman</p>
+                </div>
+                <div class="layanan-item" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="ri-star-line"></i>
+                    <h3>Berkualitas</h3>
+                    <p>Pilihan produk terbaik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#773dff" fill-opacity="1" d="M0,192L7.5,176C15,160,30,128,45,117.3C60,107,75,117,90,117.3C105,117,120,107,135,112C150,117,165,139,180,160C195,181,210,203,225,213.3C240,224,255,224,270,229.3C285,235,300,245,315,240C330,235,345,213,360,186.7C375,160,390,128,405,138.7C420,149,435,203,450,202.7C465,203,480,149,495,160C510,171,525,245,540,234.7C555,224,570,128,585,112C600,96,615,160,630,181.3C645,203,660,181,675,165.3C690,149,705,139,720,128C735,117,750,107,765,128C780,149,795,203,810,218.7C825,235,840,213,855,197.3C870,181,885,171,900,165.3C915,160,930,160,945,144C960,128,975,96,990,85.3C1005,75,1020,85,1035,106.7C1050,128,1065,160,1080,170.7C1095,181,1110,171,1125,154.7C1140,139,1155,117,1170,122.7C1185,128,1200,160,1215,149.3C1230,139,1245,85,1260,96C1275,107,1290,181,1305,186.7C1320,192,1335,128,1350,106.7C1365,85,1380,107,1395,101.3C1410,96,1425,64,1433,48L1440,32L1440,320L1432.5,320C1425,320,1410,320,1395,320C1380,320,1365,320,1350,320C1335,320,1320,320,1305,320C1290,320,1275,320,1260,320C1245,320,1230,320,1215,320C1200,320,1185,320,1170,320C1155,320,1140,320,1125,320C1110,320,1095,320,1080,320C1065,320,1050,320,1035,320C1020,320,1005,320,990,320C975,320,960,320,945,320C930,320,915,320,900,320C885,320,870,320,855,320C840,320,825,320,810,320C795,320,780,320,765,320C750,320,735,320,720,320C705,320,690,320,675,320C660,320,645,320,630,320C615,320,600,320,585,320C570,320,555,320,540,320C525,320,510,320,495,320C480,320,465,320,450,320C435,320,420,320,405,320C390,320,375,320,360,320C345,320,330,320,315,320C300,320,285,320,270,320C255,320,240,320,225,320C210,320,195,320,180,320C165,320,150,320,135,320C120,320,105,320,90,320C75,320,60,320,45,320C30,320,15,320,8,320L0,320Z"></path></svg>
+
+    <!-- Produk (Chapter 52:01) -->
+    <section id="produk" class="produk section-padding">
+        <div class="container">
+            <h2 data-aos="fade-up">Produk Kami</h2>
+            <div class="search-box">
+                 <input type="text" id="searchInput" placeholder="Cari produk...">
+            </div>
+            <div class="filter-container" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="kafetera">Kafetera</button>
+                <button class="filter-btn" data-filter="sangria">Sangria</button>
+            </div>
+
+            
+           
+            
+            <div class="produk-grid" id="produk-grid">
+                <!-- 12+ Item seperti video - ganti src img dari assets -->
+        <!-- kafetera -->
+               <div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Sedotan Hitam 6mm 500's.png" alt="Sedotan Hitam 6mm 500's">
+    </div>
+    <div class="card-body">
+        <h3>Sedotan Hitam 6mm 500's</h3>
+        <div class="price">Rp 32.000</div>
+        <button class="buy-btn" data-name="Sedotan Hitam 6mm 500's" data-price="32000" data-image="./Image/kafetera/Sedotan Hitam 6mm 500's.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Golden Straw Sedotan Steril 12mm 250's.png" alt="Golden Straw Sedotan Steril 12mm 250's">
+    </div>
+    <div class="card-body">
+        <h3>Golden Straw Sedotan Steril 12mm 250's</h3>
+        <div class="price">Rp 38.500</div>
+        <button class="buy-btn" data-name="Golden Straw Sedotan Steril 12mm 250's" data-price="38500" data-image="./Image/kafetera/Golden Straw Sedotan Steril 12mm 250's.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Plastik Bawang Bening 10x30 (1 gelas).png" alt="Plastik Bawang Bening 10x30 (1 gelas)">
+    </div>
+    <div class="card-body">
+        <h3>Plastik Bawang Bening 10x30 (1 gelas)</h3>
+        <div class="price">Rp 12.000</div>
+        <button class="buy-btn" data-name="Plastik Bawang Bening 10x30 (1 gelas)" data-price="12000" data-image="./Image/kafetera/Plastik Bawang Bening 10x30 (1 gelas).png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Plastik Bawang Bening 10x40 (2 gelas).png" alt="Plastik Bawang Bening 10x40 (2 gelas)">
+    </div>
+    <div class="card-body">
+        <h3>Plastik Bawang Bening 10x40 (2 gelas)</h3>
+        <div class="price">Rp 13.500</div>
+        <button class="buy-btn" data-name="Plastik Bawang Bening 10x40 (2 gelas)" data-price="13500" data-image="./Image/kafetera/Plastik Bawang Bening 10x40 (2 gelas).png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Biji Kopi Senses Crema Espresso 1kg.png" alt="Biji Kopi Senses Crema Espresso 1kg">
+    </div>
+    <div class="card-body">
+        <h3>Biji Kopi Senses Crema Espresso 1kg</h3>
+        <div class="price">Rp 170.000</div>
+        <button class="buy-btn" data-name="Biji Kopi Senses Crema Espresso 1kg" data-price="170000" data-image="./Image/kafetera/Biji Kopi Senses Crema Espresso 1kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Frisian Flag Omela Susu Cair Full Cream 1L.png" alt="Frisian Flag Omela Susu Cair Full Cream 1L">
+    </div>
+    <div class="card-body">
+        <h3>Frisian Flag Omela Susu Cair Full Cream 1L</h3>
+        <div class="price">Rp 18.300</div>
+        <button class="buy-btn" data-name="Frisian Flag Omela Susu Cair Full Cream 1L" data-price="18300" data-image="./Image/kafetera/Frisian Flag Omela Susu Cair Full Cream 1L.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Max Creamer 500g.png" alt="Max Creamer 500g">
+    </div>
+    <div class="card-body">
+        <h3>Max Creamer 500g</h3>
+        <div class="price">Rp 42.000</div>
+        <button class="buy-btn" data-name="Max Creamer 500g" data-price="42000" data-image="./Image/kafetera/Max Creamer 500g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Voya Vanilla Syrup 750ml.png" alt="Voya Vanilla Syrup 750ml">
+    </div>
+    <div class="card-body">
+        <h3>Voya Vanilla Syrup 750ml</h3>
+        <div class="price">Rp 106.000</div>
+        <button class="buy-btn" data-name="Voya Vanilla Syrup 750ml" data-price="106000" data-image="./Image/kafetera/Voya Vanilla Syrup 750ml.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Voya Caramel Syrup 750ml.png" alt="Voya Caramel Syrup 750ml">
+    </div>
+    <div class="card-body">
+        <h3>Voya Caramel Syrup 750ml</h3>
+        <div class="price">Rp 106.000</div>
+        <button class="buy-btn" data-name="Voya Caramel Syrup 750ml" data-price="106000" data-image="./Image/kafetera/Voya Caramel Syrup 750ml.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Voya Hazelnut Syrup 750ml.png" alt="Voya Hazelnut Syrup 750ml">
+    </div>
+    <div class="card-body">
+        <h3>Voya Hazelnut Syrup 750ml</h3>
+        <div class="price">Rp 106.000</div>
+        <button class="buy-btn" data-name="Voya Hazelnut Syrup 750ml" data-price="106000" data-image="./Image/kafetera/Voya Hazelnut Syrup 750ml.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Denali Chocolate Syrup 750ml.png" alt="Denali Chocolate Syrup 750ml">
+    </div>
+    <div class="card-body">
+        <h3>Denali Chocolate Syrup 750ml</h3>
+        <div class="price">Rp 110.000</div>
+        <button class="buy-btn" data-name="Denali Chocolate Syrup 750ml" data-price="110000" data-image="./Image/kafetera/Denali Chocolate Syrup 750ml.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Denali Syrup Chocolate Repack 250ml.png" alt="Denali Syrup Chocolate Repack 250ml">
+    </div>
+    <div class="card-body">
+        <h3>Denali Syrup Chocolate Repack 250ml</h3>
+        <div class="price">Rp 80.000</div>
+        <button class="buy-btn" data-name="Denali Syrup Chocolate Repack 250ml" data-price="80000" data-image="./Image/kafetera/Denali Syrup Chocolate Repack 250ml.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Denali Syrup Chocolate Repack 250ml DISCOUNT.png" alt="Denali Syrup Chocolate Repack 250ml DISCOUNT">
+    </div>
+    <div class="card-body">
+        <h3>Denali Syrup Chocolate Repack 250ml DISCOUNT</h3>
+        <div class="price">Rp 40.000</div>
+        <button class="buy-btn" data-name="Denali Syrup Chocolate Repack 250ml DISCOUNT" data-price="40000" data-image="./Image/kafetera/Denali Syrup Chocolate Repack 250ml DISCOUNT.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/HT Palm Sugar Syrup 750ml.png" alt="HT Palm Sugar Syrup 750ml">
+    </div>
+    <div class="card-body">
+        <h3>HT Palm Sugar Syrup 750ml</h3>
+        <div class="price">Rp 55.000</div>
+        <button class="buy-btn" data-name="HT Palm Sugar Syrup 750ml" data-price="55000" data-image="./Image/kafetera/HT Palm Sugar Syrup 750ml.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Verlin Royal Chocolate 1kg.png" alt="Verlin Royal Chocolate 1kg">
+    </div>
+    <div class="card-body">
+        <h3>Verlin Royal Chocolate 1kg</h3>
+        <div class="price">Rp 68.000</div>
+        <button class="buy-btn" data-name="Verlin Royal Chocolate 1kg" data-price="68000" data-image="./Image/kafetera/Verlin Royal Chocolate 1kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Verlin Dark Chocolate 1kg.png" alt="Verlin Dark Chocolate 1kg">
+    </div>
+    <div class="card-body">
+        <h3>Verlin Dark Chocolate 1kg</h3>
+        <div class="price">Rp 68.000</div>
+        <button class="buy-btn" data-name="Verlin Dark Chocolate 1kg" data-price="68000" data-image="./Image/kafetera/Verlin Dark Chocolate 1kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Verlin Green Tea Latte 1kg.png" alt="Verlin Green Tea Latte 1kg">
+    </div>
+    <div class="card-body">
+        <h3>Verlin Green Tea Latte 1kg</h3>
+        <div class="price">Rp 69.000</div>
+        <button class="buy-btn" data-name="Verlin Green Tea Latte 1kg" data-price="69000" data-image="./Image/kafetera/Verlin Green Tea Latte 1kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="kafetera" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/kafetera/Zoda 250ml.png" alt="Zoda 250ml">
+    </div>
+    <div class="card-body">
+        <h3>Zoda 250ml</h3>
+        <div class="price">Rp 6.500</div>
+        <button class="buy-btn" data-name="Zoda 250ml" data-price="6500" data-image="./Image/kafetera/Zoda 250ml.png">Beli</button>
+    </div>
+</div>
+        <!-- kafetera -->
+        <!-- sangria -->
+         <div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Cake Case Bulat Sweet Cake 50’s.png" alt="Cake Case Bulat Sweet Cake 50’s">
+    </div>
+    <div class="card-body">
+        <h3>Cake Case Bulat Sweet Cake 50’s</h3>
+        <div class="price">Rp 15.000</div>
+        <button class="buy-btn" data-name="Cake Case Bulat Sweet Cake 50’s" data-price="15000" data-image="./Image/sangria/Cake Case Bulat Sweet Cake 50’s.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Sticker Thank You Gulung.png" alt="Sticker Thank You Gulung">
+    </div>
+    <div class="card-body">
+        <h3>Sticker Thank You Gulung</h3>
+        <div class="price">Rp 9.000</div>
+        <button class="buy-btn" data-name="Sticker Thank You Gulung" data-price="9000" data-image="./Image/sangria/Sticker Thank You Gulung.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Tissu Jolly 250s.png" alt="Tissu Jolly 250s">
+    </div>
+    <div class="card-body">
+        <h3>Tissu Jolly 250s</h3>
+        <div class="price">Rp 12.000</div>
+        <button class="buy-btn" data-name="Tissu Jolly 250s" data-price="12000" data-image="./Image/sangria/Tissu Jolly 250s.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Sarung Tangan Plastik.png" alt="Sarung Tangan Plastik">
+    </div>
+    <div class="card-body">
+        <h3>Sarung Tangan Plastik</h3>
+        <div class="price">Rp 10.000</div>
+        <button class="buy-btn" data-name="Sarung Tangan Plastik" data-price="10000" data-image="./Image/sangria/Sarung Tangan Plastik.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Box Putih Polos 12x12 per 5’s.png" alt="Box Putih Polos 12x12 per 5’s">
+    </div>
+    <div class="card-body">
+        <h3>Box Putih Polos 12x12 per 5’s</h3>
+        <div class="price">Rp 2.600</div>
+        <button class="buy-btn" data-name="Box Putih Polos 12x12 per 5’s" data-price="2600" data-image="./Image/sangria/Box Putih Polos 12x12 per 5’s.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Gretel Brown 14x12 per 5’s.png" alt="Gretel Brown 14x12 per 5’s">
+    </div>
+    <div class="card-body">
+        <h3>Gretel Brown 14x12 per 5’s</h3>
+        <div class="price">Rp 6.200</div>
+        <button class="buy-btn" data-name="Gretel Brown 14x12 per 5’s" data-price="6200" data-image="./Image/sangria/Gretel Brown 14x12 per 5’s.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Lunch Box Kraft Size S 10’s.png" alt="Lunch Box Kraft Size S 10’s">
+    </div>
+    <div class="card-body">
+        <h3>Lunch Box Kraft Size S 10’s</h3>
+        <div class="price">Rp 6.000</div>
+        <button class="buy-btn" data-name="Lunch Box Kraft Size S 10’s" data-price="6000" data-image="./Image/sangria/Lunch Box Kraft Size S 10’s.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Lunch Box Kraft Size M 10’s.png" alt="Lunch Box Kraft Size M 10’s">
+    </div>
+    <div class="card-body">
+        <h3>Lunch Box Kraft Size M 10’s</h3>
+        <div class="price">Rp 7.500</div>
+        <button class="buy-btn" data-name="Lunch Box Kraft Size M 10’s" data-price="7500" data-image="./Image/sangria/Lunch Box Kraft Size M 10’s.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Lunch Box Kraft Size L 10’s.png" alt="Lunch Box Kraft Size L 10’s">
+    </div>
+    <div class="card-body">
+        <h3>Lunch Box Kraft Size L 10’s</h3>
+        <div class="price">Rp 8.000</div>
+        <button class="buy-btn" data-name="Lunch Box Kraft Size L 10’s" data-price="8000" data-image="./Image/sangria/Lunch Box Kraft Size L 10’s.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Lilac Cake Case Oval Repack 20pcs.png" alt="Lilac Cake Case Oval Repack 20pcs">
+    </div>
+    <div class="card-body">
+        <h3>Lilac Cake Case Oval Repack 20pcs</h3>
+        <div class="price">Rp 8.000</div>
+        <button class="buy-btn" data-name="Lilac Cake Case Oval Repack 20pcs" data-price="8000" data-image="./Image/sangria/Lilac Cake Case Oval Repack 20pcs.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Bogasari Segitiga Biru -1kg.png" alt="Bogasari Segitiga Biru -1kg">
+    </div>
+    <div class="card-body">
+        <h3>Bogasari Segitiga Biru -1kg</h3>
+        <div class="price">Rp 14.000</div>
+        <button class="buy-btn" data-name="Bogasari Segitiga Biru -1kg" data-price="14000" data-image="./Image/sangria/Bogasari Segitiga Biru -1kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Gula Pasir 1kg.png" alt="Gula Pasir 1kg">
+    </div>
+    <div class="card-body">
+        <h3>Gula Pasir 1kg</h3>
+        <div class="price">Rp 17.500</div>
+        <button class="buy-btn" data-name="Gula Pasir 1kg" data-price="17500" data-image="./Image/sangria/Gula Pasir 1kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Gonat 500g.png" alt="Gonat 500g">
+    </div>
+    <div class="card-body">
+        <h3>Gonat 500g</h3>
+        <div class="price">Rp 11.000</div>
+        <button class="buy-btn" data-name="Gonat 500g" data-price="11000" data-image="./Image/sangria/Gonat 500g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Koepoe Biji Selasih Repack 50g.png" alt="Koepoe Biji Selasih Repack 50g">
+    </div>
+    <div class="card-body">
+        <h3>Koepoe Biji Selasih Repack 50g</h3>
+        <div class="price">Rp 10.000</div>
+        <button class="buy-btn" data-name="Koepoe Biji Selasih Repack 50g" data-price="10000" data-image="./Image/sangria/Koepoe Biji Selasih Repack 50g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Fermipan 11g.png" alt="Fermipan 11g">
+    </div>
+    <div class="card-body">
+        <h3>Fermipan 11g</h3>
+        <div class="price">Rp 4.500</div>
+        <button class="buy-btn" data-name="Fermipan 11g" data-price="4500" data-image="./Image/sangria/Fermipan 11g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Dancow Instant Fortigro Sachet 27g.png" alt="Dancow Instant Fortigro Sachet 27g">
+    </div>
+    <div class="card-body">
+        <h3>Dancow Instant Fortigro Sachet 27g</h3>
+        <div class="price">Rp 4.500</div>
+        <button class="buy-btn" data-name="Dancow Instant Fortigro Sachet 27g" data-price="4500" data-image="./Image/sangria/Dancow Instant Fortigro Sachet 27g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Bakerine Plus Repack 100g.png" alt="Bakerine Plus Repack 100g">
+    </div>
+    <div class="card-body">
+        <h3>Bakerine Plus Repack 100g</h3>
+        <div class="price">Rp 14.000</div>
+        <button class="buy-btn" data-name="Bakerine Plus Repack 100g" data-price="14000" data-image="./Image/sangria/Bakerine Plus Repack 100g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Collins Dip Glaze Strawberry 1kg.png" alt="Collins Dip Glaze Strawberry 1kg">
+    </div>
+    <div class="card-body">
+        <h3>Collins Dip Glaze Strawberry 1kg</h3>
+        <div class="price">Rp 37.800</div>
+        <button class="buy-btn" data-name="Collins Dip Glaze Strawberry 1kg" data-price="37800" data-image="./Image/sangria/Collins Dip Glaze Strawberry 1kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Collins Glaze Repack Strawberry 250g.png" alt="Collins Glaze Repack Strawberry 250g">
+    </div>
+    <div class="card-body">
+        <h3>Collins Glaze Repack Strawberry 250g</h3>
+        <div class="price">Rp 12.500</div>
+        <button class="buy-btn" data-name="Collins Glaze Repack Strawberry 250g" data-price="12500" data-image="./Image/sangria/Collins Glaze Repack Strawberry 250g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Collins Dip Glaze Matcha 5kg.png" alt="Collins Dip Glaze Matcha 5kg">
+    </div>
+    <div class="card-body">
+        <h3>Collins Dip Glaze Matcha 5kg</h3>
+        <div class="price">Rp 255.000</div>
+        <button class="buy-btn" data-name="Collins Dip Glaze Matcha 5kg" data-price="255000" data-image="./Image/sangria/Collins Dip Glaze Matcha 5kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Colatta Chocolate Filling Repack 250g.png" alt="Colatta Chocolate Filling Repack 250g">
+    </div>
+    <div class="card-body">
+        <h3>Colatta Chocolate Filling Repack 250g</h3>
+        <div class="price">Rp 18.000</div>
+        <button class="buy-btn" data-name="Colatta Chocolate Filling Repack 250g" data-price="18000" data-image="./Image/sangria/Colatta Chocolate Filling Repack 250g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Chocolate Filling Repack 250g.png" alt="Chocolate Filling Repack 250g">
+    </div>
+    <div class="card-body">
+        <h3>Chocolate Filling Repack 250g</h3>
+        <div class="price">Rp 9.000</div>
+        <button class="buy-btn" data-name="Chocolate Filling Repack 250g" data-price="9000" data-image="./Image/sangria/Chocolate Filling Repack 250g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Filoku Filling Repack 250g.png" alt="Filoku Filling Repack 250g">
+    </div>
+    <div class="card-body">
+        <h3>Filoku Filling Repack 250g</h3>
+        <div class="price">Rp 10.000</div>
+        <button class="buy-btn" data-name="Filoku Filling Repack 250g" data-price="10000" data-image="./Image/sangria/Filoku Filling Repack 250g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Blueband Cake & Cookies 200g.png" alt="Blueband Cake & Cookies 200g">
+    </div>
+    <div class="card-body">
+        <h3>Blueband Cake & Cookies 200g</h3>
+        <div class="price">Rp 15.000</div>
+        <button class="buy-btn" data-name="Blueband Cake & Cookies 200g" data-price="15000" data-image="./Image/sangria/Blueband Cake & Cookies 200g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Carnation Evaporated 48x405g.png" alt="Carnation Evaporated 48x405g">
+    </div>
+    <div class="card-body">
+        <h3>Carnation Evaporated 48x405g</h3>
+        <div class="price">Rp 19.500</div>
+        <button class="buy-btn" data-name="Carnation Evaporated 48x405g" data-price="19500" data-image="./Image/sangria/Carnation Evaporated 48x405g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Haan Wippy Cream Pouch 200g.png" alt="Haan Wippy Cream Pouch 200g">
+    </div>
+    <div class="card-body">
+        <h3>Haan Wippy Cream Pouch 200g</h3>
+        <div class="price">Rp 40.000</div>
+        <button class="buy-btn" data-name="Haan Wippy Cream Pouch 200g" data-price="40000" data-image="./Image/sangria/Haan Wippy Cream Pouch 200g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Pondan Whip Cream 100g.png" alt="Pondan Whip Cream 100g">
+    </div>
+    <div class="card-body">
+        <h3>Pondan Whip Cream 100g</h3>
+        <div class="price">Rp 17.000</div>
+        <button class="buy-btn" data-name="Pondan Whip Cream 100g" data-price="17000" data-image="./Image/sangria/Pondan Whip Cream 100g.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Glaze Colatta Strawberry 5kg.png" alt="Glaze Colatta Strawberry 5kg">
+    </div>
+    <div class="card-body">
+        <h3>Glaze Colatta Strawberry 5kg</h3>
+        <div class="price">Rp 289.000</div>
+        <button class="buy-btn" data-name="Glaze Colatta Strawberry 5kg" data-price="289000" data-image="./Image/sangria/Glaze Colatta Strawberry 5kg.png">Beli</button>
+    </div>
+</div>
+
+<div class="produk-card" data-category="sangria" data-aos="fade-up" data-aos-delay="100">
+    <div class="card-img">
+        <img src="./Image/sangria/Le Patta Tropicana Blueberry 5kg.png" alt="Le Patta Tropicana Blueberry 5kg">
+    </div>
+    <div class="card-body">
+        <h3>Le Patta Tropicana Blueberry 5kg</h3>
+        <div class="price">Rp 100.000</div>
+        <button class="buy-btn" data-name="Le Patta Tropicana Blueberry 5kg" data-price="100000" data-image="./Image/sangria/Le Patta Tropicana Blueberry 5kg.png">Beli</button>
+    </div>
+</div>
+        <!-- sangria -->
+                <!-- Tambah 11 item lagi dengan kategori berbeda dari assets Drive -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Chapter 1:26:24) -->
+    <footer id="kontak" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Lumina Store</h3>
+                    <p>Toko online terpercaya dengan ribuan produk berkualitas.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#">Kebijakan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="https://wa.me/62895630498343" target="_blank"><i class="ri-whatsapp-line"></i></a>
+                        <a href="#"><i class="ri-facebook-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./Dist/js/style.js"></script>
+
+<div class="modal" id="productModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="modalProductName">Detail Produk</h3>
+      <button class="close-modal" id="closeProductModal">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <img id="modalProductImage" class="modal-img" src="" alt="">
+      <p id="modalProductPrice" class="modal-price">Rp 0</p>
+
+      <div class="qty-box">
+        <button type="button" id="qtyMinus">-</button>
+        <input type="number" id="qtyInput" value="1" min="1">
+        <button type="button" id="qtyPlus">+</button>
+      </div>
+
+      <div class="summary-box">
+        <p>Total Barang: <span id="modalTotalQty">1</span></p>
+        <p>Total Harga: <span id="modalTotalPrice">Rp 0</span></p>
+      </div>
+      <div class="customer-form">
+  <input type="text" id="customerName" placeholder="Nama Anda">
+  <input type="text" id="customerClass" placeholder="Kelas Anda">
+</div>  
+
+      <button type="button" class="checkout-btn" id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>

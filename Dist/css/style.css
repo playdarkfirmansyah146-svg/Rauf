@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    overflow-x: hidden;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600;
+    background: linear-gradient( #4714ff , #95aeff );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Navbar - Persis Chapter 12:33 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo i {
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    z-index: 1001;
+}
+
+.hamburger i {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    transition: 0.3s;
+}
+
+/* Mobile Menu */
+@media (max-width: 992px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 300px;
+        background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(20px);
+        transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu a {
+        color: white;
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Hero - Chapter 33:45 */
+.hero a {
+    color: black;
+}
+
+.hero {
+    min-height: 100vh;
+    background-color: #773dff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+ 
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    animation: heroFloat 6s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(233, 237, 255, 0.428);
+}
+
+/* Layanan - Chapter 44:15 */
+.layanan {
+    background: #ffffff;
+
+}
+
+.layanan h2 {
+    background: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.layanan-item {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid rgba(255,255,255,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.layanan-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.layanan-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+}
+
+.layanan-item i {
+    font-size: 4rem;
+    background: linear-gradient(135deg, #667eea 0);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.layanan-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.layanan-item p {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+/* Produk Filter - Chapter 52:01 & 1:01:39 */
+
+.produk {
+    background-color: #773dff;
+    margin-top: -10px;
+}
+
+.produk h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 15px 30px;
+    border: 2px solid transparent;
+    background: rgba(255,255,255,0.9);
+    color: #2c3e50;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: left 0.4s;
+    z-index: -1;
+}
+
+.filter-btn:hover::before,
+.filter-btn.active::before {
+    left: 0;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: white;
+    border-color: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+}
+
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.produk-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.produk-card.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    display: none;
+}
+
+.produk-card:hover {
+    transform: translateY(-20px) scale(1.02);
+    box-shadow: 0 40px 100px rgba(0,0,0,0.2);
+}
+
+.card-img {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.produk-card:hover .card-img img {
+    transform: scale(1.1);
+}
+
+.produk-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-body h3 {
+    min-height: 56px;           
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;      
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.price {
+    margin-top: auto;         
+}
+/* pemisah */
+.produk-card {
+    background: white;
+    border-radius: 24px;
+    border: 2px solid #667eea;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.produk .container .card-img {
+    height: 280px;
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+    background: #fdfdfd;       
+    overflow: hidden;
+}
+
+.produk .container .card-img img  {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;       
+    padding: 10px;
+    transition: transform 0.5s;
+}
+
+.cart-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #667eea;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.cart-btn span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* body */
+.card-body {
+    padding: 2rem;
+}
+
+.card-body h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Footer - Chapter 1:26:24 */
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #667eea;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 2rem;
+    text-align: center;
+    color: #bdc3c7;
+}
+
+/* Responsive - Persis Video Mobile Test */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .hero {
+        background-attachment: scroll;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .filter-container {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        padding: 12px 24px;
+        width: 200px;
+    }
+    
+    .produk-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+
+    .nav-menu.active {
+        width: 100%;
+        right: 0;
+    }
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 450px;
+    max-height: 90vh;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+  padding: 16px 20px;
+  background: #667eea;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-modal {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(90vh - 70px);
+}
+
+.modal-img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.modal-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 15px 0;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.qty-box button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #667eea;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.qty-box input {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.summary-box {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.search-box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 16px;
+  border: 2px solid #667eea;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+}
+
+.customer-form {
+  display: grid;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.customer-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
